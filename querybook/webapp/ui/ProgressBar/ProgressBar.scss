@@ -1,0 +1,96 @@
+.ProgressBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    progress {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        border: none;
+        border-radius: var(--border-radius);
+        display: block;
+        height: 16px;
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+        background-color: var(--bg-light);
+        &::-webkit-progress-bar {
+            background-color: var(--bg-light);
+        }
+        &::-webkit-progress-value {
+            background-color: var(--progress);
+        }
+        &::-moz-progress-bar {
+            background-color: var(--progress);
+        }
+
+        &.success {
+            &::-webkit-progress-value {
+                background-color: var(--color-true);
+            }
+            &::-moz-progress-bar {
+                background-color: var(--color-true);
+            }
+        }
+        &.info {
+            &::-webkit-progress-value {
+                background-color: var(--color-accent);
+            }
+            &::-moz-progress-bar {
+                background-color: var(--color-accent);
+            }
+        }
+        &.warning {
+            &::-webkit-progress-value {
+                background-color: var(--color-warning);
+            }
+            &::-moz-progress-bar {
+                background-color: var(--color-warning);
+            }
+        }
+        &.danger {
+            &::-webkit-progress-value {
+                background-color: var(--color-false);
+            }
+            &::-moz-progress-bar {
+                background-color: var(--color-false);
+            }
+        }
+        &.light {
+            background-color: var(--bg-light);
+            &::-webkit-progress-bar {
+                background-color: var(--bg-light);
+            }
+            &::-webkit-progress-value {
+                background-color: var(--bg-dark);
+            }
+            &::-moz-progress-bar {
+                background-color: var(--bg-dark);
+            }
+        }
+        &.dark {
+            background-color: var(--bg-dark);
+            &::-webkit-progress-bar {
+                background-color: var(--bg-dark);
+            }
+            &::-webkit-progress-value {
+                background-color: var(--bg-invert);
+            }
+            &::-moz-progress-bar {
+                background-color: var(--bg-invert);
+            }
+        }
+    }
+    .ProgressBar-value {
+        font-size: var(--xsmall-text-size);
+        font-weight: 700;
+    }
+    &.small {
+        progress {
+            height: 12px;
+        }
+        .ProgressBar-value {
+            font-size: var(--xxsmall-text-size);
+        }
+    }
+}

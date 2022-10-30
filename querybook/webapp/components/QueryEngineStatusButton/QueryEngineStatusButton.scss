@@ -1,0 +1,25 @@
+.QueryEngineStatusButton {
+    position: relative;
+
+    &.status-warning .IconButton {
+        color: var(--color-warning);
+    }
+
+    &.status-error .IconButton {
+        color: var(--color-false);
+    }
+}
+
+.QueryEngineStatusPopover {
+    .QueryEngineStatusPopover-refresh {
+        .Icon {
+            margin-right: 4px;
+            svg {
+                padding: 16%;
+            }
+        }
+    }
+    .status-row {
+        width: 100%;
+    }
+}

@@ -1,0 +1,45 @@
+.ViewersList {
+    width: 400px;
+
+    > div {
+        margin-top: 16px;
+    }
+
+    .add-user-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .add-user-icon {
+            margin-top: 6px;
+            margin-right: 6px;
+        }
+
+        .user-select-wrapper {
+            flex: 1;
+            color: var(--text-invert);
+        }
+    }
+
+    .viewers-list-wrapper {
+        // Each row is 65px, show at most 5
+        max-height: 320px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+    }
+
+    .viewers-user-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0px;
+
+        .access-info {
+            display: flex;
+            align-items: center;
+            text-align: right;
+        }
+    }
+}

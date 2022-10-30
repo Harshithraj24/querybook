@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<ToolBarButton__StyledButton
+  aria-label=""
+  className=""
+  data-balloon-pos="up"
+>
+  <Memo()
+    name="check"
+    size={18}
+  />
+</ToolBarButton__StyledButton>
+`;
+
+exports[`matches test renderer snapshot serializes the styles 1`] = `
+<span
+  aria-label=""
+  className="ToolBarButton__StyledButton-qi1boi-0 kHGJPi"
+  data-balloon-pos="up"
+>
+  
+</span>
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<div
+  className="Level-qauoxs-0 jimMja Level horizontal-space-between "
+>
+  <Level__LevelItem />
+</div>
+`;
+
+exports[`matches test renderer snapshot serializes the styles 1`] = `
+<div
+  className="Level-qauoxs-0 jimMja Level horizontal-space-between "
+>
+  <div
+    className="Level__LevelItem-qauoxs-1 LevelItem  flex-row"
+  />
+</div>
+`;

@@ -1,0 +1,148 @@
+@import './../../scss_variables.scss';
+
+.QueryEditor {
+    position: relative;
+
+    .CodeMirror {
+        // New style
+        line-height: 17px;
+
+        .CodeMirror-cursor {
+            // HACK: chrome bug where border width < 1px will not get drawn
+            border-left-width: 1.4px;
+        }
+    }
+
+    .CodeMirror-hover {
+        background-color: var(--bg-text-select);
+    }
+
+    .fullscreen-button-wrapper {
+        position: absolute;
+        top: 0;
+        z-index: 9;
+        right: 0;
+
+        .Button {
+            background-color: transparent;
+        }
+    }
+
+    &.fullScreen {
+        .react-codemirror2,
+        .CodeMirror {
+            height: 100%;
+        }
+        @include full-screen(39);
+    }
+}
+
+.CodeMirror-hints {
+    padding: 5px;
+
+    margin-left: -8px;
+    border: none;
+    margin-left: -94px;
+    overflow: auto;
+    z-index: 400;
+
+    // New style
+    background: var(--bg);
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+
+    .CodeMirror-hint {
+        font-size: var(--small-text-size);
+        line-height: 1.5;
+        color: var(--text-dark);
+        white-space: nowrap;
+
+        b {
+            color: var(--text);
+        }
+
+        &.CodeMirror-hint-active {
+            color: var(--color-accent-dark);
+            background: none;
+
+            b {
+                color: var(--color-accent-dark);
+            }
+        }
+
+        .code-editor-autocomplete-wrapper {
+            display: flex;
+            align-items: center;
+
+            .code-editor-autocomplete-span {
+                flex: 1;
+                text-align: left;
+                margin-right: 15px;
+
+                &:last-of-type {
+                    margin-right: 0px;
+                }
+            }
+
+            .code-editor-golden-span {
+                width: 13px;
+                flex: 0 0 13px;
+
+                .golden-item-icon {
+                    vertical-align: baseline;
+
+                    &.golden {
+                        color: var(--color-true);
+                    }
+
+                    &.not-golden {
+                        color: var(--text-dark);
+                    }
+                }
+            }
+
+            .code-editor-warning-span {
+                width: 13px;
+                flex: 0 0 13px;
+
+                .warning-item-icon {
+                    vertical-align: baseline;
+
+                    &.warning {
+                        color: var(--color-yellow);
+                    }
+
+                    &.not-warning {
+                        color: var(--text-dark);
+                    }
+                }
+            }
+
+            .code-editor-trustworthiness-span {
+                // width: 28px; // If supporting 100
+                // flex: 0 0 28px;
+                width: 15px;
+                flex: 0 0 15px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+
+                .trustworthiness-icon {
+                    flex: 0 1;
+                    display: none;
+                }
+
+                .trustworthiness-value {
+                    text-align: right;
+                    // width: 14px;
+                    display: inline-block;
+                    flex: 1;
+                }
+            }
+
+            .code-editor-tooltip-span {
+                text-align: right;
+            }
+        }
+    }
+}

@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<nav
+  className="Pagination"
+>
+  <div
+    className="Pagination-previous"
+    key="previous-div"
+  >
+    <Button
+      className=""
+      color="default"
+      onClick={[Function]}
+      size="medium"
+      theme="fill"
+      title="Previous"
+    />
+  </div>
+  <div
+    className="Pagination-next"
+    key="next-div"
+  >
+    <Button
+      className=""
+      color="default"
+      onClick={[Function]}
+      size="medium"
+      theme="fill"
+      title="Next"
+    />
+  </div>
+  <ul
+    className="Pagination-pages flex-center"
+  >
+    <PageButton
+      className=""
+      key="0"
+      onClick={[Function]}
+      page={0}
+      shift={1}
+    />
+    <PageButton
+      className="current"
+      key="1"
+      onClick={[Function]}
+      page={1}
+      shift={1}
+    />
+    <PageButton
+      className=""
+      key="2"
+      onClick={[Function]}
+      page={2}
+      shift={1}
+    />
+    <PageButton
+      className=""
+      key="3"
+      onClick={[Function]}
+      page={3}
+      shift={1}
+    />
+    <li
+      key="last"
+    >
+      <span
+        className="Pagination-ellipsis"
+      >
+        …
+      </span>
+    </li>
+    <PageButton
+      key="9"
+      onClick={[Function]}
+      page={9}
+      shift={1}
+    />
+  </ul>
+</nav>
+`;
+
+exports[`matches test renderer snapshot serializes the styles 1`] = `
+<nav
+  className="Pagination"
+>
+  <div
+    className="Pagination-previous"
+  >
+    <span
+      className="StyledButton-aqwbwz-0 krfWYh Button fill"
+      color="var(--text-light)"
+      onClick={[Function]}
+      size="medium"
+    >
+      <div
+        className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text"
+      >
+        Previous
+      </div>
+      <div
+        className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text flex-row"
+      />
+    </span>
+  </div>
+  <div
+    className="Pagination-next"
+  >
+    <span
+      className="StyledButton-aqwbwz-0 krfWYh Button fill"
+      color="var(--text-light)"
+      onClick={[Function]}
+      size="medium"
+    >
+      <div
+        className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text"
+      >
+        Next
+      </div>
+      <div
+        className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text flex-row"
+      />
+    </span>
+  </div>
+  <ul
+    className="Pagination-pages flex-center"
+  >
+    <li>
+      <span
+        className="StyledButton-aqwbwz-0 krfWYh Button Pagination-page-button  fill"
+        color="var(--text-light)"
+        onClick={[Function]}
+        size="medium"
+      >
+        <div
+          className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text"
+        >
+          1
+        </div>
+        <div
+          className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text flex-row"
+        />
+      </span>
+    </li>
+    <li>
+      <span
+        className="StyledButton-aqwbwz-0 krfWYh Button Pagination-page-button current fill"
+        color="var(--text-light)"
+        onClick={[Function]}
+        size="medium"
+      >
+        <div
+          className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text"
+        >
+          2
+        </div>
+        <div
+          className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text flex-row"
+        />
+      </span>
+    </li>
+    <li>
+      <span
+        className="StyledButton-aqwbwz-0 krfWYh Button Pagination-page-button  fill"
+        color="var(--text-light)"
+        onClick={[Function]}
+        size="medium"
+      >
+        <div
+          className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text"
+        >
+          3
+        </div>
+        <div
+          className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text flex-row"
+        />
+      </span>
+    </li>
+    <li>
+      <span
+        className="StyledButton-aqwbwz-0 krfWYh Button Pagination-page-button  fill"
+        color="var(--text-light)"
+        onClick={[Function]}
+        size="medium"
+      >
+        <div
+          className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text"
+        >
+          4
+        </div>
+        <div
+          className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text flex-row"
+        />
+      </span>
+    </li>
+    <li>
+      <span
+        className="Pagination-ellipsis"
+      >
+        …
+      </span>
+    </li>
+    <li>
+      <span
+        className="StyledButton-aqwbwz-0 krfWYh Button Pagination-page-button  fill"
+        color="var(--text-light)"
+        onClick={[Function]}
+        size="medium"
+      >
+        <div
+          className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text"
+        >
+          10
+        </div>
+        <div
+          className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text flex-row"
+        />
+      </span>
+    </li>
+  </ul>
+</nav>
+`;

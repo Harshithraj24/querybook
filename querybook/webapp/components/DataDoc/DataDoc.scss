@@ -1,0 +1,192 @@
+// Temporal
+.temporal-edit-title-modal-wrapper {
+    .close {
+        display: none;
+    }
+
+    .DebouncedInput {
+        border: var(--border);
+        padding: 4px;
+        border-radius: 4px;
+    }
+}
+
+.DataDoc {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+
+    .DataDocRightSidebar {
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        z-index: 9;
+        flex: 1;
+    }
+
+    .DataDocLeftSidebar {
+        flex: 1;
+    }
+
+    .header-hero {
+        border-bottom: var(--border);
+    }
+
+    .data-doc-content-container {
+        flex: 0 1 var(--max-width);
+        padding: 36px 8px 36px 16px;
+        overflow: hidden;
+
+        .data-doc-header {
+            padding: 0px 12px 8px;
+            color: var(--text-light);
+
+            .data-doc-header-top {
+                align-items: end;
+                .data-doc-header-users {
+                    .ImpressionWidget {
+                        margin-right: 4px;
+                    }
+                }
+            }
+
+            .IconButton,
+            .ImpressionWidget {
+                margin-left: 16px;
+            }
+            .favorite-icon-button {
+                &.favorite-icon-button-favorited {
+                    color: var(--color-yellow);
+                    .Icon {
+                        svg {
+                            fill: var(--color-yellow);
+                        }
+                    }
+
+                    &:hover,
+                    &.active {
+                        .Icon {
+                            color: var(--color-yellow-light);
+                            svg {
+                                fill: var(--color-yellow-light);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .data-doc-container {
+            .data-doc-cell-container-pair {
+                position: relative;
+
+                &.data-doc-cell-container-pair-final {
+                    min-height: 48px;
+                }
+
+                .data-doc-cell {
+                    border-radius: var(--border-radius);
+                    margin: 48px 16px;
+                }
+
+                .data-doc-cell-users {
+                    top: 44px;
+                    left: -16px;
+                    position: absolute;
+
+                    .UserAvatar {
+                        margin-bottom: -8px;
+                    }
+                }
+
+                .data-doc-cell-divider-container {
+                    box-sizing: border-box;
+                    height: 0px;
+
+                    .DataDocUIGuide {
+                        margin-top: 12px;
+                    }
+
+                    .block-crud-buttons {
+                        opacity: 0;
+                        top: -17px;
+                        position: relative;
+                        text-align: center;
+                        margin: 0px 8px;
+
+                        &.active,
+                        &:hover {
+                            opacity: 1;
+                        }
+
+                        .block-left-buttons-wrapper {
+                            position: absolute;
+                            left: 4px;
+                            .Dropdown {
+                                .Dropdown-trigger {
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .block-right-buttons-wrapper {
+                            position: absolute;
+                            right: 4px;
+                        }
+                        .block-crud-button {
+                            margin: 0;
+                            & + .block-crud-button {
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                }
+
+                .DataDocQueryCell-more-button,
+                .QueryRunButton,
+                .additional-dropdown-button,
+                .add-snippet-wrapper,
+                .fullscreen-button-wrapper,
+                .chart-cell-controls {
+                    opacity: 0;
+                    transition: opacity 0.2s ease-out;
+                }
+
+                &:hover .add-new-line-button {
+                    opacity: 1;
+                }
+
+                &:hover {
+                    .data-doc-cell-divider-container {
+                        .block-crud-buttons {
+                            opacity: 1;
+                        }
+                    }
+
+                    .DataDocQueryCell-more-button,
+                    .QueryRunButton,
+                    .additional-dropdown-button,
+                    .add-snippet-wrapper,
+                    .fullscreen-button-wrapper,
+                    .chart-cell-controls {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .datadoc-loading {
+        width: 480px;
+        height: 100vh;
+        position: relative;
+        text-align: center;
+    }
+
+    .SearchAndReplaceBar {
+        position: fixed;
+        right: 60px;
+        z-index: 40;
+    }
+}

@@ -1,0 +1,10 @@
+@import './../../scss_variables.scss';
+
+.StatementExecutionBar {
+    .Dropdown-trigger {
+        display: flex;
+    }
+    .Button {
+        margin-left: 8px;
+    }
+}

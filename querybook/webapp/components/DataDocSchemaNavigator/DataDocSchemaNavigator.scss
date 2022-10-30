@@ -1,0 +1,17 @@
+.DataDocSchemaNavigator {
+    .DataTableNavigator {
+        flex: 1 0 200px;
+    }
+
+    .schema-info-panel {
+        min-height: 20%;
+        max-height: 80%;
+        box-shadow: var(--box-shadow-sm);
+
+        .DataTableViewMini {
+            border-top: var(--border);
+            height: 100%;
+            margin-left: 8px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.ChangeLog {
+    .ChangeLog-list {
+        .ChangeLog-log-item {
+            cursor: pointer;
+            font-size: var(--xlarge-text-size);
+            font-weight: 600;
+            .Icon {
+                color: transparent;
+                margin-right: 36px;
+                svg {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+
+            &:hover {
+                .Icon {
+                    color: var(--icon);
+                }
+            }
+        }
+    }
+}

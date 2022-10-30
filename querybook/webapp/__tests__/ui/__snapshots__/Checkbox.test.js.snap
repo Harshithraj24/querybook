@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<div
+  className="Checkbox"
+>
+  <label
+    className=""
+    onClick={[Function]}
+  >
+    <input
+      readOnly={true}
+      type="checkbox"
+    />
+    <AccentText
+      size="small"
+    />
+  </label>
+</div>
+`;

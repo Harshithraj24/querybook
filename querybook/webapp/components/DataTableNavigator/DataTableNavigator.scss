@@ -1,0 +1,16 @@
+.DataTableNavigator {
+    .navigator-metastore-picker {
+        .control select {
+            background-color: var(--bg-select);
+            border-radius: var(--border-radius-sm);
+        }
+    }
+
+    .table-scroll-wrapper {
+        flex: 1;
+    }
+
+    .tabs {
+        padding-top: 5px;
+    }
+}

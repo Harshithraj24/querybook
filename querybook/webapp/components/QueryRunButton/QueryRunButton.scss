@@ -1,0 +1,40 @@
+.QueryRunButton {
+    .Button {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        margin: 0px 4px;
+        font-weight: bold;
+    }
+    .run-selection {
+        line-height: 24px;
+    }
+}
+
+.QueryEngineSelector {
+    display: inline-block;
+    height: 100%;
+    .engine-selector-dropdown {
+        height: 100%;
+        .Dropdown-trigger {
+            .engine-selector-button {
+                min-width: 120px;
+                border-radius: var(--border-radius-sm);
+                user-select: none;
+                font-size: var(--small-text-size);
+                height: 36px;
+
+                &:hover {
+                    background-color: var(--bg-hover);
+                }
+                &:focus {
+                    background-color: var(--bg-lightest);
+                }
+            }
+        }
+    }
+
+    &.readonly {
+        line-height: 36px;
+    }
+}

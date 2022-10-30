@@ -1,0 +1,60 @@
+.FlowGraph {
+    height: 100%;
+    width: 100%;
+
+    .react-flow__node {
+        width: auto;
+    }
+
+    .react-flow__handle {
+        border: 3px solid var(--bg-dark);
+    }
+
+    .react-flow__minimap {
+        background-color: var(--bg);
+        .react-flow__minimap-node {
+            fill: var(--bg-light);
+            stroke: none;
+        }
+    }
+
+    .react-flow__controls {
+        border-radius: var(--border-radius-sm);
+        overflow: hidden;
+
+        .react-flow__controls-button {
+            background: var(--bg-light);
+            border-bottom: none;
+        }
+    }
+
+    .react-flow__attribution {
+        display: none;
+    }
+
+    .layout-buttons {
+        align-items: flex-end;
+        .FlowGraph-hint {
+            background-color: var(--bg-lightest);
+            border-radius: var(--border-radius-sm);
+            .KeyboardKey {
+                font-size: var(--xxsmall-text-size);
+            }
+            > .flex-column {
+                > div,
+                > span {
+                    height: 28px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            > .flex-column:last-child {
+                align-items: flex-start;
+            }
+        }
+        > * {
+            z-index: 100;
+        }
+    }
+}

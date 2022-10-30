@@ -1,0 +1,19 @@
+.EnvironmentTopbar {
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-sm);
+    background-color: var(--bg-lightest);
+    // match when collapsed
+    margin-left: 1px;
+
+    .env-icon-wrapper {
+        display: inline-block;
+
+        &:not(:first-child) {
+            margin-left: var(--margin-xs);
+        }
+    }
+    .Dropdown {
+        margin-right: 8px;
+    }
+}

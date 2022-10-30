@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<div
+  className="Tabs"
+>
+  <ul>
+    <li
+      className=""
+      key="0"
+      onClick={[Function]}
+    >
+      <a
+        className="flex-center"
+      />
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`matches enzyme snapshots matches snapshot 2`] = `
+<div
+  className="Tabs vertical wide small right-align"
+>
+  <ul>
+    <li
+      className=""
+      key="0"
+      onClick={[Function]}
+    >
+      <a
+        className="flex-center"
+      >
+        <Memo()
+          name="check"
+        />
+        <AccentText>
+          test
+        </AccentText>
+      </a>
+    </li>
+  </ul>
+</div>
+`;

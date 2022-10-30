@@ -1,0 +1,11 @@
+.TryItOut {
+    .cards-container {
+        display: flex;
+        .card {
+            max-width: 300px;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+}

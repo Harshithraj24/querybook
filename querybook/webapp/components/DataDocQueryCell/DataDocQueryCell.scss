@@ -1,0 +1,130 @@
+@import './../../scss_variables.scss';
+
+.DataDocQueryCell {
+    &.fullScreen {
+        @include full-screen(39);
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        .query-metadata {
+            padding: 0px 8px;
+        }
+
+        .query-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+
+            .editor {
+                flex: 1;
+                margin: 0;
+                overflow: hidden;
+                display: flex;
+                .QueryEditor {
+                    flex: 1;
+                }
+            }
+        }
+
+        .DataDocQueryExecutions {
+            overflow: auto;
+            height: 100%;
+            border-top: var(--border);
+            padding: 12px;
+        }
+    }
+
+    &:not(.fullScreen) {
+        .QueryEditor .CodeMirror {
+            .CodeMirror-scroll,
+            .CodeMirror-sizer {
+                max-height: 50vh;
+                min-height: 50px;
+            }
+        }
+    }
+
+    .collapsed-query {
+        color: var(--text-lightest);
+        font-size: var(--med-text-size);
+        font-weight: var(--bold-font);
+
+        padding-top: 6px;
+    }
+
+    .query-title {
+        flex: 1;
+    }
+
+    .query-metadata {
+        display: flex;
+
+        .query-controls {
+            align-self: flex-end;
+            height: 48px;
+            .query-engine-name {
+                font-size: var(--text-size);
+            }
+
+            .QueryRunButton .Button,
+            .engine-selector-dropdown .Dropdown-trigger,
+            .query-cell-additional-dropdown .Dropdown-trigger {
+                height: 36px;
+            }
+            .Menu .MenuItem .Dropdown-trigger {
+                height: auto;
+            }
+
+            .query-cell-additional-dropdown {
+                .Dropdown-trigger {
+                    .additional-dropdown-button {
+                        cursor: pointer;
+
+                        height: 100%;
+                        width: 24px;
+                        font-size: 20px;
+                        line-height: 38px;
+
+                        border-radius: var(--border-radius-sm);
+
+                        svg {
+                            z-index: 4;
+                        }
+                        &:hover {
+                            background-color: var(--bg-hover);
+                        }
+                        &:focus {
+                            background-color: var(--bg-lightest);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .editor {
+        position: relative;
+        box-sizing: border-box;
+        margin: 8px 0px;
+
+        .fullscreen-button-wrapper {
+            position: absolute;
+            top: 0;
+            z-index: 9;
+            right: 0;
+
+            .Button {
+                background-color: transparent;
+            }
+        }
+
+        .add-snippet-wrapper {
+            position: absolute;
+            top: 10px;
+            right: 42px;
+        }
+    }
+}

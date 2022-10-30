@@ -1,0 +1,32 @@
+.DataTableViewSamples {
+    .DataTableViewSamples-form {
+        background-color: var(--bg-lightest);
+        padding: 4px 8px;
+
+        .DataTableViewSamples-top {
+            .FormField:first-child {
+                min-width: 200px;
+            }
+            .FormField:last-child {
+                min-width: 480px;
+            }
+        }
+        .DataTableViewSamples-mid {
+            display: flex;
+            flex-direction: column;
+        }
+        .DataTableViewSamples-bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            .FormField {
+                min-width: 320px;
+            }
+        }
+    }
+
+    .samples-control {
+        margin-bottom: 4px;
+    }
+}

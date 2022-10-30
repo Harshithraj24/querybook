@@ -1,0 +1,29 @@
+.ToggleSwitch {
+    position: relative;
+    min-width: 48px;
+    width: 48px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: var(--color-null);
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+
+    .ToggleSwitch-circle {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 18px;
+        height: 18px;
+        background-color: var(--bg);
+        border-radius: 50%;
+        transition: all 0.25s ease-out;
+    }
+
+    &.checked {
+        background-color: var(--color-accent-lightest);
+        .ToggleSwitch-circle {
+            left: 25px;
+            background-color: var(--color-accent);
+        }
+    }
+}

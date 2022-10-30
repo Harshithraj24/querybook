@@ -1,0 +1,23 @@
+@charset "utf-8";
+#root {
+    height: 100%;
+}
+
+#root,
+#overlay-root,
+#notification-root {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans-serif);
+    font-size: var(--small-text-size);
+}
+
+.app-splash {
+    background-color: var(--bg);
+}
+
+.ReactVirtualized__Grid {
+    outline: none;
+}
+
+@import './stylesheets/_html.scss';

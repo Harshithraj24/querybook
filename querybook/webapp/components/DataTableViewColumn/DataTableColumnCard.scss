@@ -1,0 +1,29 @@
+@import '../../scss_variables.scss';
+
+.DataTableColumnCard {
+    .Card {
+        margin: 16px 0px;
+
+        .DataTableColumnCard-top {
+            cursor: pointer;
+            .DataTableColumnCard-left {
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+
+                .column-type {
+                    min-width: 80px;
+                }
+            }
+        }
+
+        .DataTableColumnCard-preview {
+            @include one-line-ellipsis();
+            width: 95%;
+        }
+
+        .EditableTextField .editor-wrapper {
+            background-color: var(--bg-light);
+        }
+    }
+}

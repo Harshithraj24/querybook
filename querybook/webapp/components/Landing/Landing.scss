@@ -1,0 +1,59 @@
+.Landing {
+    padding: 24px 48px 36px;
+    height: 100%;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .Landing-top {
+        width: 100%;
+        .Landing-greeting,
+        .Landing-subtitle {
+            font-weight: var(--extra-bold-font);
+            font-family: var(--font-accent);
+        }
+
+        .Landing-subtitle {
+            font-size: var(--med-text-size);
+            color: var(--text-light);
+        }
+
+        .Landing-greeting {
+            font-size: var(--xxxlarge-text-size);
+            color: var(--color-accent-dark);
+        }
+        .QuerybookSidebarUIGuide {
+            align-self: flex-start;
+            margin: 4px;
+        }
+    }
+
+    .Landing-bottom {
+        align-items: flex-start;
+
+        width: 100%;
+        max-width: 960px;
+        padding: 0px 12px;
+
+        > div:first-child {
+            margin-bottom: 24px;
+        }
+
+        .Landing-section-title {
+            font-size: var(--med-text-size);
+            font-weight: var(--bold-font);
+            font-family: var(--font-accent);
+            margin-bottom: 4px;
+        }
+
+        .Landing-list {
+            .Landing-data-doc {
+                cursor: pointer;
+                margin: 4px 0px;
+                &:hover {
+                    color: var(--color-accent-dark);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<Button
+  aria-label="Click To Copy"
+  className="CopyButton"
+  data-balloon-pos="up"
+  icon="link"
+  onClick={[Function]}
+  onMouseLeave={[Function]}
+  size="small"
+  title="Test Copy"
+/>
+`;
+
+exports[`matches test renderer snapshot serializes the styles 1`] = `
+<span
+  aria-label="Click To Copy"
+  className="StyledButton-aqwbwz-0 kHAKid Button CopyButton flex-row text"
+  color="var(--text-light)"
+  data-balloon-pos="up"
+  fontWeight="700"
+  onClick={[Function]}
+  onMouseLeave={[Function]}
+  size="small"
+>
+  <div
+    className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text"
+  >
+    Test Copy
+  </div>
+  <div
+    className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text flex-row"
+  />
+</span>
+`;

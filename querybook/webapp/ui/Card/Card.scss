@@ -1,0 +1,28 @@
+.Card {
+    justify-content: center;
+    border-radius: var(--border-radius);
+    padding: 8px;
+    background-color: var(--bg-lightest);
+
+    .Card-content {
+        margin: 0px 8px;
+        text-align: center;
+    }
+    &.flex-row {
+        .Card-title {
+            margin: 16px;
+        }
+    }
+
+    &.align-left {
+        .Card-content {
+            text-align: left;
+        }
+    }
+    &.clickable {
+        cursor: pointer;
+        &:hover {
+            background-color: var(--bg-hover);
+        }
+    }
+}

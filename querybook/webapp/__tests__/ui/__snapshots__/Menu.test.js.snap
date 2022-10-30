@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<div
+  className="Menu-sc-13z76nv-0 jonXBt Menu"
+>
+  <Menu__MenuItem>
+    <Menu__MenuItemPing />
+  </Menu__MenuItem>
+  <Menu__MenuDivider />
+  <Menu__MenuInfoItem />
+</div>
+`;
+
+exports[`matches test renderer snapshot serializes the styles 1`] = `
+<div
+  className="Menu-sc-13z76nv-0 jonXBt Menu"
+>
+  <span
+    className="Menu__MenuItem-sc-13z76nv-1 MenuItem"
+  >
+    <div
+      className="Menu__MenuItemPing-sc-13z76nv-4 gcRlsS MenuItemPing"
+    />
+  </span>
+  <div
+    className="Menu__MenuDivider-sc-13z76nv-3 fCTKBX MenuDivider"
+  />
+  <div
+    className="Menu__MenuInfoItem-sc-13z76nv-2 MenuInfoItem"
+  />
+</div>
+`;

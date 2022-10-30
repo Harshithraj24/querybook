@@ -1,0 +1,9 @@
+.CopyPasteModal {
+    .CopyPasteModal-text {
+        > pre {
+            word-break: break-all;
+        }
+        max-height: 600px;
+        overflow: auto;
+    }
+}

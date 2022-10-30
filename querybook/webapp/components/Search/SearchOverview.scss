@@ -1,0 +1,169 @@
+.SearchOverview {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: var(--max-width);
+    margin: 0px auto;
+
+    .search-types {
+        font-family: var(--font-accent);
+        .Tabs {
+            width: 100%;
+            ul {
+                margin-bottom: -1px;
+                > li {
+                    padding: 12px 24px 8px;
+                }
+            }
+        }
+    }
+
+    .search-bar-wrapper {
+        .SearchBar {
+            flex-grow: 1;
+            padding: 0px var(--padding) 4px;
+            .DebouncedInput {
+                input {
+                    padding: var(--padding);
+                }
+                ::placeholder {
+                    color: var(--text-light);
+                }
+            }
+        }
+    }
+
+    .search-body {
+        overflow: auto;
+        flex: 1;
+
+        .result-item-golden {
+            > span {
+                display: flex;
+                align-items: center;
+            }
+
+            .crown svg {
+                color: var(--color-accent);
+                height: 16px;
+                stroke-width: 2.5px;
+            }
+        }
+
+        .Container-content {
+            overflow: hidden;
+
+            .search-results {
+                flex: 7 1 0;
+                padding: 0px 16px;
+                max-width: 70%;
+                overflow-y: scroll;
+
+                .EmptyText {
+                    padding-top: var(--padding);
+                    margin: 0px auto;
+                }
+                .search-result-top {
+                    background-color: var(--bg);
+                    position: sticky;
+                    top: 0;
+                    z-index: 11;
+                    padding: var(--padding);
+                    color: var(--text-light);
+                    font-weight: var(--light-bold-font);
+                    font-family: var(--font-accent);
+                }
+            }
+
+            .search-filters {
+                flex: 3 1 0;
+                padding: 8px 8px;
+                overflow-y: scroll;
+
+                .search-filter {
+                    margin: 4px 0px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 24px;
+                    }
+
+                    .filter-title {
+                        margin-bottom: 8px;
+                        display: flex;
+                        font-family: var(--font-accent);
+                        align-items: center;
+                        white-space: nowrap;
+                        font-size: var(--text-size);
+                        font-weight: var(--bold-font);
+                    }
+
+                    .filter-statement-type,
+                    .filter-query-type {
+                        width: 100%;
+                    }
+
+                    .filter-duration {
+                        input {
+                            width: 50%;
+                            padding: 2px 4px;
+                        }
+                    }
+
+                    .data-doc-filter-owner {
+                        margin-top: 5px;
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        .UserAvatar {
+                            margin-right: 12px;
+                            display: inline-block;
+                        }
+
+                        .filter-owner-name {
+                            flex: 1;
+                        }
+                    }
+
+                    .add-authors {
+                        margin-top: 4px;
+
+                        &.Button:hover {
+                            background-color: var(--bg-hover);
+                        }
+                    }
+                    .TableTagGroupSelect .tables-tag-list {
+                        margin-left: -4px;
+                    }
+                }
+            }
+        }
+    }
+
+    .search-instructions-tip {
+        background-color: var(--bg-lightest);
+        padding: 12px 16px;
+        user-select: none;
+
+        .search-instructions {
+            .search-instructions-span {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+.Modal-content {
+    .SearchOverview {
+        max-height: inherit;
+    }
+}
+
+.EnvironmentAppRouter-content {
+    .search-instructions-tip {
+        display: none;
+    }
+}

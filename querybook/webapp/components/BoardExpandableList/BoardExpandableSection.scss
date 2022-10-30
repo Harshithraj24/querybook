@@ -1,0 +1,44 @@
+.BoardExpandableSection {
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+    margin-top: var(--margin-sm);
+
+    &.dragged-over {
+        background-color: var(--bg-select);
+    }
+
+    .board-header-section {
+        > div:first-child,
+        .ListLink {
+            flex-grow: 1;
+            overflow: hidden;
+        }
+        &:hover {
+            background-color: var(--bg-hover);
+        }
+        .board-header-title {
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .header-control-section {
+            display: inline-flex;
+            align-items: center;
+
+            .hover-control-section {
+                display: none;
+            }
+        }
+
+        &:hover {
+            .hover-control-section {
+                display: inline-flex;
+            }
+        }
+    }
+
+    .board-item-list {
+        padding-bottom: var(--padding-sm);
+    }
+}

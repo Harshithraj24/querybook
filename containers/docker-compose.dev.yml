@@ -1,0 +1,34 @@
+version: '2.1'
+
+services:
+    base:
+        image: querybook-dev:latest
+        tty: true
+        stdin_open: true
+        network_mode: 'host'
+        environment:
+            PORT: ${PORT}
+        # restart: "always"
+        volumes:
+            # This is for code change via watcher
+            - $PWD:/opt/querybook
+            # See https://stackoverflow.com/questions/29181032/add-a-volume-to-docker-but-exclude-a-sub-folder
+            - /opt/querybook/node_modules/
+            # Make sure the build files don't leak back
+            - /opt/querybook/dist/
+    web:
+        extends:
+            service: base
+        command: './querybook/scripts/docker_run_interactive ./querybook/scripts/runservice web --debug --webpack ${PORT-10001}'
+    worker:
+        extends:
+            service: base
+        command: ./querybook/scripts/docker_run_interactive ./querybook/scripts/runservice worker
+    scheduler:
+        extends:
+            service: base
+        command: './querybook/scripts/docker_run_interactive ./querybook/scripts/runservice scheduler'
+    terminal:
+        extends:
+            service: base
+        command: bash

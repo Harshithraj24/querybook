@@ -1,0 +1,31 @@
+.CodeMirror {
+    font-family: var(--font-monospace);
+    font-size: var(--small-text-size);
+    border-radius: var(--border-radius-sm);
+    line-height: 17px;
+
+    &.cm-s-default {
+        &.CodeHighlight,
+        .CodeMirror-scroll {
+            background-color: var(--bg-query-editor);
+        }
+        .CodeMirror-gutters {
+            background-color: var(--bg-query-editor-gutter);
+            border-right: 1px transparent;
+        }
+    }
+
+    .cm-matchhighlight {
+        border-bottom: 1px solid var(--color-accent-light);
+    }
+
+    .cm-searching {
+        background-color: var(--text-highlight);
+    }
+
+    // For some reason, monokai assign same color for
+    // tag and keyword, this is to differentiate the two
+    &.cm-s-monokai span.cm-tag {
+        color: #a6e22e;
+    }
+}

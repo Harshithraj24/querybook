@@ -1,0 +1,44 @@
+.AdminEnvironment {
+    .AdminEnvironment-engine-info {
+        margin: 8px;
+        font-size: var(--xsmall-text-size);
+    }
+    .QueryEngineSelect {
+        .Select,
+        select {
+            width: 100%;
+        }
+    }
+    .AdminEnvironment-engine-list {
+        max-height: 160px;
+        overflow-y: auto;
+        margin: 8px 0px;
+        padding: 8px;
+        background-color: var(--bg-light);
+        border-radius: var(--border-radius-sm);
+        .AdminEnvironment-engine {
+            padding: 4px;
+
+            .AdminEnvironment-engine-name {
+                cursor: pointer;
+                &:hover {
+                    color: var(--color-accent-dark);
+                }
+            }
+
+            .delete-query-engine-button {
+                visibility: hidden;
+            }
+            &:hover {
+                .delete-query-engine-button {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    .AdminForm-right .FormField .ToggleSwitch {
+        margin-left: auto;
+        margin-right: 0px;
+    }
+}

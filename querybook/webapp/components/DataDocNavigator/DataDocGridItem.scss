@@ -1,0 +1,18 @@
+.DataDocGridItem {
+    .delete-grid-item-button {
+        display: none;
+        padding: 0px;
+    }
+
+    &:hover {
+        .delete-grid-item-button {
+            display: flex;
+        }
+    }
+}
+
+.DataDocHoverContent {
+    .DataDocHoverContent-date {
+        font-size: var(--xsmall-text-size);
+    }
+}

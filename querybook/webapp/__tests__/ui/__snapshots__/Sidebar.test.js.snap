@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<Sidebar__StyledSidebar
+  className=""
+  isVisible={true}
+  left={true}
+  right={false}
+>
+  <FullHeight
+    className="sidebar-content"
+  >
+    <Resizable
+      defaultSize={
+        Object {
+          "height": "100%",
+          "width": "250px",
+        }
+      }
+      enable={
+        Object {
+          "bottom": false,
+          "bottomLeft": false,
+          "bottomRight": false,
+          "left": false,
+          "right": true,
+          "top": false,
+          "topLeft": false,
+          "topRight": false,
+        }
+      }
+      grid={
+        Array [
+          1,
+          1,
+        ]
+      }
+      lockAspectRatio={false}
+      lockAspectRatioExtraHeight={0}
+      lockAspectRatioExtraWidth={0}
+      onResize={[Function]}
+      onResizeStart={[Function]}
+      onResizeStop={[Function]}
+      style={Object {}}
+    >
+      <FullHeight />
+    </Resizable>
+  </FullHeight>
+</Sidebar__StyledSidebar>
+`;

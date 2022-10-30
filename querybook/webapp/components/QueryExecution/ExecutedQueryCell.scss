@@ -1,0 +1,9 @@
+.ExecutedQueryCell {
+    border-radius: var(--border-radius-sm);
+
+    .engine-text {
+        color: var(--text-light);
+        text-transform: uppercase;
+        font-weight: var(--light-bold-font);
+    }
+}

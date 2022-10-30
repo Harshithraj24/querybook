@@ -1,0 +1,37 @@
+.AdminAppEntitySidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    height: 100%;
+    background-color: var(--bg-lightest);
+    text-align: center;
+
+    .AdminAppEntitySidebar-main,
+    .AdminAppEntitySidebar-bottom {
+        .AdminAppEntitySidebar-top {
+            box-sizing: content-box;
+            font-size: var(--small-text-size);
+            letter-spacing: 1px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .AdminAppEntitySidebar-item {
+            margin-left: 2.5px;
+            cursor: pointer;
+            user-select: none;
+            font-weight: 500;
+
+            .IconButton {
+                margin-right: 6px;
+            }
+            &:hover {
+                color: var(--text-hover);
+            }
+            &.active {
+                color: var(--color-accent-dark);
+            }
+        }
+    }
+}

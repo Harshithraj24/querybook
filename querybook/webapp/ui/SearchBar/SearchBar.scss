@@ -1,0 +1,27 @@
+.SearchBar {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .DebouncedInput {
+        flex: 1;
+    }
+    &.transparent {
+        .DebouncedInput {
+            input {
+                padding: 12px;
+            }
+        }
+    }
+    .SearchIcon {
+        position: absolute;
+        right: 16px;
+        top: 10px;
+        color: var(--icon);
+    }
+
+    .search-bar-clear-sep {
+        border-left: var(--border);
+        height: 20px;
+    }
+}

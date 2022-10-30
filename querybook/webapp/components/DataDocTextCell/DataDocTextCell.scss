@@ -1,0 +1,23 @@
+.DataDocTextCell {
+    padding: 15px;
+    cursor: text;
+    border-radius: var(--border-radius);
+    font-size: var(--text-size);
+
+    &:focus-within {
+        background-color: var(--bg-lightest);
+    }
+
+    &:hover {
+        background-color: var(--bg-hover);
+    }
+}
+
+.readonly {
+    .DataDocTextCell {
+        &:focus-within,
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}

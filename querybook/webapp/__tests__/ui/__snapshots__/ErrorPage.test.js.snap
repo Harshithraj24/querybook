@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<FullHeight
+  className="ErrorPage"
+>
+  <Center
+    className="flex-column"
+  >
+    <Title
+      className="mb24"
+      size="xxlarge"
+    >
+      Unknown Error
+    </Title>
+    <Subtitle
+      className="ErrorPage-message mb16"
+    >
+      Unknown error occured at
+      <code
+        className="ErrorPage-path ml4"
+      >
+        /
+      </code>
+      .
+      <span
+        className="ml4"
+      >
+        Click 
+        <a
+          onClick={[Function]}
+        >
+          here
+        </a>
+         to go back.
+      </span>
+    </Subtitle>
+  </Center>
+</FullHeight>
+`;
+
+exports[`matches enzyme snapshots matches snapshot 2`] = `
+<ErrorPage
+  errorCode={404}
+/>
+`;
+
+exports[`matches enzyme snapshots matches snapshot 3`] = `
+<ErrorPage
+  errorCode={403}
+/>
+`;

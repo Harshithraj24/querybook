@@ -1,0 +1,152 @@
+.Tabs {
+    cursor: default;
+    ul {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        font-weight: var(--bold-font);
+
+        li {
+            padding: 8px 12px;
+            box-sizing: border-box;
+            border-bottom: solid 1px transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            a {
+                color: var(--text);
+
+                .Icon {
+                    & ~ span {
+                        // To create gap between icon and title
+                        margin-left: 4px;
+                    }
+
+                    svg {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
+
+            &.active {
+                border-radius: var(--border-radius-sm);
+                a {
+                    color: var(--color-accent-dark);
+                }
+            }
+        }
+    }
+    &:not(.disabled) {
+        ul li {
+            &:not(.active):hover {
+                cursor: pointer;
+                a {
+                    color: var(--text);
+                }
+            }
+        }
+    }
+
+    &:not(.pills) {
+        ul {
+            li {
+                &:not(.active):hover {
+                    border-radius: var(--border-radius-sm);
+                }
+            }
+        }
+    }
+
+    font-size: var(--small-text-size);
+
+    &.small {
+        font-size: var(--xsmall-text-size);
+    }
+
+    &.large {
+        font-size: var(--text-size);
+    }
+
+    &.pills {
+        ul {
+            border-radius: var(--border-radius-sm);
+            li {
+                background-color: var(--bg-light);
+                padding: 4px 16px;
+                border-bottom: none;
+
+                &.active {
+                    border-radius: 0px;
+                    background-color: var(--color-accent-lightest-0);
+                    a {
+                        color: var(--color-accent-dark);
+                    }
+                }
+
+                &:first-child {
+                    border-top-left-radius: var(--border-radius-sm);
+                    border-bottom-left-radius: var(--border-radius-sm);
+                }
+                &:last-child {
+                    border-top-right-radius: var(--border-radius-sm);
+                    border-bottom-right-radius: var(--border-radius-sm);
+                }
+            }
+        }
+
+        &:not(.disabled) {
+            ul li {
+                &:not(.active):hover {
+                    background-color: var(--bg-hover);
+                }
+            }
+        }
+    }
+
+    &.wide {
+        ul {
+            justify-content: space-between;
+        }
+        &.pills {
+            li {
+                width: 100%;
+            }
+        }
+    }
+
+    &.vertical {
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    &.center-align {
+        ul {
+            justify-content: center;
+        }
+    }
+    &.left-align {
+        ul {
+            justify-content: left;
+        }
+    }
+
+    &.selectColor {
+        ul {
+            li {
+                &.active {
+                    background-color: var(--color-accent-lightest-0);
+                }
+                &:not(.active):hover {
+                    background-color: var(--bg-hover);
+                }
+            }
+        }
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+    }
+}

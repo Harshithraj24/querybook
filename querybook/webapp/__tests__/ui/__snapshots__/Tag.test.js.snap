@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<Tag__StyledColorTag
+  className="Tag flex-row"
+  highlighted={false}
+>
+  test
+</Tag__StyledColorTag>
+`;
+
+exports[`matches enzyme snapshots matches snapshot 2`] = `
+<Tag__StyledColorTag
+  className="Tag flex-row"
+  highlighted={true}
+>
+  test
+</Tag__StyledColorTag>
+`;

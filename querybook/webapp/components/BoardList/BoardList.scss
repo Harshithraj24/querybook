@@ -1,0 +1,13 @@
+.BoardList {
+    display: flex;
+    flex-direction: column;
+    .BoardList-header {
+        .SearchBar {
+            flex: 1;
+        }
+    }
+
+    .board-scroll-wrapper {
+        flex: 1 0 100px;
+    }
+}

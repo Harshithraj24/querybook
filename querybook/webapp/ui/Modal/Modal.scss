@@ -1,0 +1,102 @@
+.Modal {
+    .Modal-top,
+    .Modal-bottom {
+        margin: 16px 24px 0px;
+    }
+
+    .FullScreenModal,
+    .StandardModal,
+    .CustomModal {
+        z-index: 300;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Modal-background {
+        background-color: var(--bg-invert);
+        opacity: 0.75;
+    }
+
+    .Modal-box {
+        width: 90vw;
+        min-width: 400px;
+        max-width: var(--max-width);
+        max-height: 84vh;
+        margin: 0 auto;
+        border-radius: var(--border-radius);
+        background-color: var(--bg);
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        animation: translateFadeModalUp 0.2s ease-in-out;
+    }
+
+    .StandardModal {
+        padding-top: 8vh;
+        align-items: center;
+        overflow: hidden;
+
+        &.wide {
+            .Modal-box {
+                max-width: var(--max-width);
+            }
+        }
+
+        &.message-size {
+            .Modal-box {
+                width: 600px;
+            }
+        }
+
+        &.no-scroll .Modal-box .Modal-content {
+            overflow: hidden;
+        }
+
+        .Modal-box {
+            .Modal-content {
+                max-height: inherit;
+                height: auto;
+                overflow-y: auto;
+                margin-top: var(--margin);
+                padding: var(--padding-xl);
+                padding-top: 0px;
+            }
+        }
+    }
+
+    .FullScreenModal {
+        background-color: var(--bg);
+        max-height: 100vh;
+        max-width: 100vw;
+        overflow: hidden;
+        .Modal-top {
+            margin: var(--margin-xs) var(--margin-sm);
+            .Modal-title {
+                font-size: var(--text-size);
+            }
+        }
+        .Modal-content {
+            position: relative;
+            height: 100%;
+            overflow-y: auto;
+        }
+    }
+
+    // Custom Modal for Search
+    .SearchModal {
+        padding-top: 8vh;
+    }
+}
+
+@keyframes translateFadeModalUp {
+    0% {
+        opacity: 0.2;
+        transform: translate(0, 5vh);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}

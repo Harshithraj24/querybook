@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot - height/width 1`] = `
+<div
+  className="Card flex-row clickable "
+  onClick={[Function]}
+  style={
+    Object {
+      "height": "120px",
+      "width": "120px",
+    }
+  }
+>
+  <AccentText
+    className="mt8 mb16"
+    size="large"
+    weight="bold"
+  >
+    test
+  </AccentText>
+  <div
+    className="Card-content"
+  >
+    Test Content
+  </div>
+</div>
+`;
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<div
+  className="Card flex-column clickable "
+  onClick={[Function]}
+  style={null}
+>
+  <AccentText
+    className="mt8 mb16"
+    size="large"
+    weight="bold"
+  >
+    test
+  </AccentText>
+  <div
+    className="Card-content"
+  >
+    Test Content
+  </div>
+</div>
+`;

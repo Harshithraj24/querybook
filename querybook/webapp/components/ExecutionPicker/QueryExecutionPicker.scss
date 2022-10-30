@@ -1,0 +1,35 @@
+@import './../../scss_variables.scss';
+
+.QueryExecutionPicker {
+    .execution-selector-button {
+        cursor: pointer;
+    }
+
+    .query-execution-item {
+        display: flex;
+        white-space: nowrap;
+
+        &.query-execution-selected,
+        &:hover {
+            color: var(--text);
+            background-color: var(--bg-hover);
+        }
+    }
+
+    .query-execution-item-wrapper {
+        max-height: 300px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: var(--border-radius-sm);
+        border-bottom-right-radius: var(--border-radius-sm);
+    }
+
+    .query-execution-item-header {
+        padding: 8px 12px;
+        border-bottom: var(--border);
+        align-items: flex-end;
+        white-space: nowrap;
+    }
+}

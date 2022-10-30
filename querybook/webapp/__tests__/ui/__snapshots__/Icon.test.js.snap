@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<Memo()
+  name="Check"
+>
+  <span
+    className="Icon"
+  >
+    <Check>
+      <svg
+        className="lucide lucide-check"
+        fill="none"
+        height={24}
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          key="10jjfj"
+          points="20 6 9 17 4 12"
+        />
+      </svg>
+    </Check>
+  </span>
+</Memo()>
+`;
+
+exports[`matches test renderer snapshot serializes the styles 1`] = `
+<span
+  className="Icon"
+>
+  <svg
+    className="lucide lucide-check"
+    fill="none"
+    height={24}
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+    width={24}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <polyline
+      points="20 6 9 17 4 12"
+    />
+  </svg>
+</span>
+`;

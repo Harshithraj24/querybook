@@ -1,0 +1,106 @@
+@media only screen and (min-width: 768px) {
+    .HeaderSection {
+        margin-top: 2rem;
+
+        .hero {
+            padding: 4rem 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .Querybook-Showcase {
+            margin: 2rem 0;
+        }
+    }
+}
+
+.HeaderSection {
+    .hero {
+        background-color: var(--ifm-background-color);
+    }
+
+    .container {
+        text-align: center;
+
+        .hero__title {
+            animation: fadeIn 1s ease-in-out;
+
+            font-size: var(--xxxlarge-text-size);
+            margin-bottom: 0;
+            user-select: none;
+        }
+        .hero__subtitle {
+            animation: fadeIn 1s ease-in-out backwards;
+            animation-delay: 0.5s;
+
+            font-size: var(--large-text-size);
+            color: var(--ifm-color-emphasis-500);
+        }
+    }
+
+    .Querybook-Showcase {
+        animation: fadeIn 1s ease-in-out backwards;
+        animation-delay: 1s;
+    }
+
+    .HeaderActions {
+        animation: fadeIn 1s ease-in-out backwards;
+        animation-delay: 1s;
+
+        margin-top: 2rem;
+        flex-wrap: wrap;
+
+        > .button,
+        .github-button {
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .github-button {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .used-by {
+        animation: fadeIn 1s ease-in-out backwards;
+        animation-delay: 1s;
+
+        margin-bottom: var(--ifm-paragraph-margin-bottom);
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .used-by-logos {
+        animation: fadeIn 1s ease-in-out backwards;
+        animation-delay: 1s;
+        flex-wrap: wrap;
+        // To offset the margin top of child elements
+        // which is used for flex wrap
+        margin-top: -10px;
+
+        .used-by-logo {
+            display: block;
+            box-sizing: border-box;
+            height: 50px;
+        }
+
+        > a {
+            margin-top: 10px;
+            &:not(:first-child) {
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}

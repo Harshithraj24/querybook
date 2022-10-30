@@ -1,0 +1,20 @@
+.QueryView {
+    .query-execution-section-inner {
+        font-size: var(--xsmall-text-size);
+    }
+
+    .editor {
+        margin: 8px 0px;
+    }
+
+    .ErrorPage {
+        min-height: 360px;
+    }
+}
+
+.EnvironmentAppRouter-content .QueryView {
+    padding: 24px 36px;
+    overflow-x: scroll;
+    overflow-y: auto;
+    height: 100%;
+}

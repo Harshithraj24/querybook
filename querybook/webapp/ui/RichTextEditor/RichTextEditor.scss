@@ -1,0 +1,51 @@
+.RichTextEditor {
+    position: relative;
+
+    .toolbar-wrapper {
+        position: fixed;
+        z-index: 15; // 10 is the + cell icons, and 20 is the sticky header
+    }
+
+    .DraftEditor-root {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--text);
+        }
+
+        h1 {
+            font-size: var(--xlarge-text-size);
+            // So it visually aligns
+            margin-left: -3px;
+        }
+
+        h2 {
+            font-size: var(--large-text-size);
+            // So it visually aligns
+            margin-left: -2px;
+        }
+
+        h1,
+        h2 {
+            font-weight: var(--bold-font);
+            font-family: var(--font-accent);
+            letter-spacing: var(--letter-spacing-bold);
+        }
+
+        blockquote {
+            font-weight: bold;
+            padding-left: 20px;
+        }
+
+        a {
+            color: var(--color-accent-dark);
+        }
+
+        .search-highlight {
+            background-color: var(--text-highlight);
+        }
+    }
+}

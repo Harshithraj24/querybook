@@ -1,0 +1,53 @@
+.EditableTextField {
+    .edit-mode-button {
+        cursor: pointer;
+        opacity: 0.5;
+
+        display: flex;
+        margin-top: -2px;
+        margin-right: 4px;
+    }
+
+    .editor-wrapper {
+        display: flex;
+        padding: var(--padding);
+        word-break: break-word;
+        align-items: flex-start;
+        border-radius: var(--border-radius-sm);
+
+        .RichTextEditor {
+            flex: 1;
+        }
+
+        border: 1px solid transparent;
+    }
+
+    &:hover {
+        .edit-mode-button {
+            opacity: 1;
+        }
+    }
+
+    &.edit-mode .editor-wrapper {
+        background-color: var(--bg-light);
+    }
+
+    .edit-mode-footer {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 8px;
+    }
+}
+
+.FormFieldInputSection {
+    .EditableTextField {
+        background-color: var(--bg-light);
+        border-radius: var(--border-radius-sm);
+        .editor-wrapper {
+            padding: 0px;
+        }
+        .edit-mode-button {
+            margin: 4px 8px;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@import '../../scss_variables.scss';
+
+.FormFieldInputSection {
+    .RichTextEditor {
+        @include standard-textbox();
+    }
+}

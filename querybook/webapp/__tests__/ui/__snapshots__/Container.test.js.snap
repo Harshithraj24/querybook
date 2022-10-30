@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<div
+  className="TestContainer Container"
+>
+  <FullHeight
+    className="Container-content"
+  >
+    Test
+  </FullHeight>
+</div>
+`;
+
+exports[`matches test renderer snapshot serializes the styles 1`] = `
+<div
+  className="TestContainer Container"
+>
+  <div
+    className="FullHeight-p6umsy-0 kFdkFT Container-content"
+  >
+    Test
+  </div>
+</div>
+`;

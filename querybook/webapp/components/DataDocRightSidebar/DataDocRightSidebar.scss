@@ -1,0 +1,23 @@
+.DataDocRightSidebar {
+    .DataDocRightSidebar-button-section {
+        .DataDocRightSidebar-button-section-top {
+            .connected-button {
+                color: var(--color-false);
+            }
+            .IconButton {
+                transition: opacity 0.2s ease-out;
+                &.hide-button {
+                    opacity: 0;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+
+    .schema-panel-wrapper {
+        position: fixed;
+        right: 0;
+        height: 100%;
+        display: flex;
+    }
+}

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot - size 1`] = `
+<QuerybookLogo__StyledQuerybookLogo
+  size={8}
+>
+  <span
+    className="querybook-wordmark"
+  >
+    Querybook
+  </span>
+</QuerybookLogo__StyledQuerybookLogo>
+`;
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<QuerybookLogo__StyledQuerybookLogo
+  size={2}
+>
+  <span
+    className="querybook-wordmark"
+  >
+    Querybook
+  </span>
+</QuerybookLogo__StyledQuerybookLogo>
+`;
+
+exports[`matches test renderer snapshot serializes the styles 1`] = `
+<span
+  className="QuerybookLogo__StyledQuerybookLogo-sc-1aw8dxl-0 hVAUTy"
+  size={2}
+>
+  <span
+    className="querybook-wordmark"
+  >
+    Querybook
+  </span>
+</span>
+`;

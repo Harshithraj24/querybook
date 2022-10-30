@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<div
+  className="Dropdown  opens-bottom aligns-left"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <AccentText
+    className="Dropdown-trigger"
+    weight="bold"
+  >
+    <ForwardRef
+      icon="Menu"
+      noPadding={true}
+    />
+  </AccentText>
+</div>
+`;
+
+exports[`matches test renderer snapshot serializes the styles 1`] = `
+<div
+  className="Dropdown  opens-bottom aligns-left"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="StyledText__StyledTextDiv-sc-1ldibmc-0 lcQBiO Text Dropdown-trigger"
+  >
+    <span
+      className="IconButton no-padding"
+    >
+      <span
+        className="Icon"
+      >
+        <svg
+          className="lucide lucide-menu"
+          fill="none"
+          height={24}
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+          width={24}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            x1="4"
+            x2="20"
+            y1="12"
+            y2="12"
+          />
+          <line
+            x1="4"
+            x2="20"
+            y1="6"
+            y2="6"
+          />
+          <line
+            x1="4"
+            x2="20"
+            y1="18"
+            y2="18"
+          />
+        </svg>
+      </span>
+       
+    </span>
+  </div>
+</div>
+`;

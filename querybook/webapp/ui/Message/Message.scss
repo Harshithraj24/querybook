@@ -1,0 +1,72 @@
+.Message {
+    --message-color: var(--text-dark);
+    --message-bg: var(--bg-light);
+    --message-bg-light: var(--bg-lightest);
+    &.error {
+        --message-color: var(--color-false-darkest);
+        --message-bg: var(--color-false-transp-lightest);
+        --message-bg-light: var(--color-false-transp-lightest-0);
+    }
+    &.warning {
+        --message-color: var(--color-warning-darkest);
+        --message-bg: var(--color-warning-transp-lightest);
+        --message-bg-light: var(--color-warning-transp-lightest-0);
+    }
+    &.success {
+        --message-color: var(--color-true-darkest);
+        --message-bg: var(--color-true-transp-lightest);
+        --message-bg-light: var(--color-true-transp-lightest-0);
+    }
+    &.tip {
+        --message-color: var(--color-accent-darkest);
+        --message-bg: var(--color-accent-transp-lightest);
+        --message-bg-light: var(--color-accent-transp-lightest-0);
+    }
+
+    --message-header-text-size: var(--text-size);
+    --message-text-size: var(--small-text-size);
+    &.tip,
+    &.small {
+        --message-header-text-size: var(--small-text-size);
+        --message-text-size: var(--xsmall-text-size);
+    }
+
+    &.large {
+        --message-header-text-size: var(--med-text-size);
+        --message-text-size: var(--text-size);
+    }
+
+    &.center {
+        text-align: center;
+    }
+
+    color: var(--message-color);
+    margin-bottom: 8px;
+    border-radius: var(--border-radius-sm);
+    background-color: var(--message-bg-light);
+    white-space: pre-wrap;
+    overflow: hidden;
+
+    .Message-header {
+        font-size: var(--message-header-text-size);
+        background-color: var(--message-bg);
+        padding: 6px 12px;
+        color: var(--message-color);
+    }
+
+    .Message-body {
+        padding: 8px 12px;
+        font-size: var(--message-text-size);
+        font-weight: normal;
+    }
+
+    &.Message-has-icon {
+        .Message-body {
+            display: flex;
+            align-items: center;
+            .Message-icon {
+                margin-right: 8px;
+            }
+        }
+    }
+}

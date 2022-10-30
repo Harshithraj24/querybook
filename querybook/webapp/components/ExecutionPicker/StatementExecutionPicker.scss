@@ -1,0 +1,16 @@
+@import './../../scss_variables.scss';
+
+.StatementExecutionPicker {
+    .custom-statement-picker-button {
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+
+        .dropdown-icon {
+            margin-left: 0.5em;
+            position: relative;
+            top: -2px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.KeyContentDisplay {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    cursor: default;
+
+    .KeyContentDisplay-key {
+        width: 180px;
+        margin-right: 12px;
+        color: var(--text-light);
+        font-size: var(--text-size);
+        font-weight: var(--light-bold-font);
+    }
+    .KeyContentDisplay-content {
+        width: 100%;
+        align-self: center;
+
+        &.right-align {
+            max-width: 80px;
+            font-variant-numeric: tabular-nums;
+        }
+    }
+}

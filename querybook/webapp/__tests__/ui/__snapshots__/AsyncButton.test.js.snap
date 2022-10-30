@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches enzyme snapshots matches snapshot - disbled 1`] = `
+<Button
+  className=""
+  color="default"
+  disabled={true}
+  isLoading={false}
+  onClick={[Function]}
+  size="medium"
+  theme="fill"
+  title="test"
+/>
+`;
+
+exports[`matches enzyme snapshots matches snapshot 1`] = `
+<Button
+  className=""
+  color="default"
+  disabled={false}
+  isLoading={false}
+  onClick={[Function]}
+  size="medium"
+  theme="fill"
+  title="test"
+/>
+`;
+
+exports[`matches test renderer snapshot serializes the styles 1`] = `
+<span
+  className="StyledButton-aqwbwz-0 krfWYh Button fill"
+  color="var(--text-light)"
+  disabled={false}
+  onClick={[Function]}
+  size="medium"
+>
+  <div
+    className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text"
+  >
+    test
+  </div>
+  <div
+    className="StyledText__StyledTextDiv-sc-1ldibmc-0 bLpBLx Text flex-row"
+  />
+</span>
+`;

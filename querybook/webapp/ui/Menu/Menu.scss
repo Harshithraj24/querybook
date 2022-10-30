@@ -1,0 +1,60 @@
+.Menu {
+    background-color: var(--bg);
+    color: var(--text);
+    user-select: none;
+    border-radius: var(--border-radius-sm);
+    // overflow: hidden;
+
+    .MenuItem,
+    .MenuInfoItem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        position: relative;
+        color: inherit;
+
+        text-align: left;
+        white-space: nowrap;
+        width: 100%;
+        padding: 8px 24px 8px 12px;
+    }
+
+    .MenuItem {
+        cursor: pointer;
+        * {
+            cursor: pointer;
+        }
+
+        &:hover {
+            background-color: var(--bg-hover);
+            color: var(--hover-text-color);
+            a {
+                color: inherit;
+            }
+        }
+        &:first-child {
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+        }
+        &:last-child {
+            border-bottom-left-radius: inherit;
+            border-bottom-right-radius: inherit;
+        }
+    }
+
+    .MenuInfoItem {
+        color: var(--text-light);
+    }
+
+    &.soft {
+        background: var(--bg-light);
+        color: var(--text-light);
+        border: none;
+
+        .MenuItem:hover,
+        .MenuItem.is-active {
+            color: var(--text);
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.StatusIcon {
+    display: inline-flex;
+    color: var(--color-null);
+    margin-right: 6px;
+
+    &.success {
+        color: var(--color-true-light);
+    }
+    &.warning {
+        color: var(--color-yellow-light);
+    }
+    &.error {
+        color: var(--color-false-light);
+    }
+    &.running {
+        color: var(--color-blue-light);
+    }
+}

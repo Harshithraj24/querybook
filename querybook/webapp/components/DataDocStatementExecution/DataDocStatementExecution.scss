@@ -1,0 +1,43 @@
+.DataDocStatementExecution {
+    width: 100%;
+
+    .statement-execution-content {
+        position: relative;
+        box-sizing: border-box;
+        background: transparent;
+        margin-bottom: 0px;
+        padding: 0px;
+        border-radius: 0px;
+
+        .statement-execution-text-title {
+            font-size: var(--small-text-size);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .statement-execution-no-output {
+            text-align: center;
+            font-size: var(--med-text-size);
+            user-select: none;
+
+            padding: 8px;
+            font-weight: bold;
+            color: var(--text-light);
+        }
+
+        .statement-execution-progress-wrapper {
+            margin-bottom: 10px;
+
+            progress {
+                width: 40%;
+                display: inline-block;
+            }
+        }
+    }
+
+    .statement-execution-footer {
+        .statement-time-display {
+            text-align: left;
+        }
+    }
+}

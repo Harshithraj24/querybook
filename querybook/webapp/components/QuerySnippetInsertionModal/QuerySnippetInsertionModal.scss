@@ -1,0 +1,29 @@
+.QuerySnippetInsertionModal {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    min-height: 500px;
+
+    .query-snippet-insertion-content {
+        flex: 1;
+        display: flex;
+        overflow: hidden;
+
+        .QuerySnippetNavigator {
+            height: 100%;
+        }
+
+        .query-snippet-view-wrapper {
+            flex: 1;
+            overflow: auto;
+            margin-left: var(--margin);
+        }
+    }
+
+    .snippet-description {
+        p {
+            white-space: pre-wrap;
+        }
+    }
+}
